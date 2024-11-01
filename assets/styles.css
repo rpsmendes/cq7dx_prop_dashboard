@@ -1,0 +1,55 @@
+/* Dark Mode Styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.highlight-green {
+    background-color: #1e1e1e;
+    border: 5px solid lightgreen;
+    border-radius: 50%; /* Ensures the div is circular */
+    width: 150px;       /* Fixed width for the circle */
+    height: 150px;      /* Fixed height for the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 255, 120, 0.8);
+    text-align: center;
+    animation: pulse 1.5s infinite;
+    margin: 20px;
+}
+
+.highlight-red {
+    background-color: #1e1e1e;
+    border: 5px solid red;
+    border-radius: 0%; /* Ensures the div is circular */
+    width: 150px;       /* Fixed width for the circle */
+    height: 150px;      /* Fixed height for the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 255, 120, 0.8);
+    text-align: center;
+    animation: pulse 1.5s infinite;
+    margin: 20px;
+}
+
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); } /* Soft white glow */
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); } /* More diffused white glow */
+    100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); } /* Soft white glow */
+}
+
+
+#latest-muf {
+    font-size: 2em;
+    font-weight: bold;
+    color: #00ff78;
+}
